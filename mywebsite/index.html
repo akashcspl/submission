@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+    <header> <!--HEADER STARTS-->
+        <div class="image-container">
+            <img src = "https://www.bing.com/th/id/OGC.0b0706f1686b56b3f597aa1ebe19b971?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia1.tenor.com%2fimages%2f0b0706f1686b56b3f597aa1ebe19b971%2ftenor.gif%3fitemid%3d14292027&ehk=dyynTwyfW9x62PvQk2dciN%2bHeFmBOZ%2be2jfWAznWUrc%3d" class = "zawarudogif"> <br>
+            <div class="overlay-text"><h1>You thought it was going to be <div class = "myname">Akash Agarwal</div> but it's me! Dio!</h1></div>
+        </div>
+        <div class = rickrolllink>
+            <a href="rickroll.html" align = "center">DO NOT CLICK</a>
+        </div>
+        
+    </header> <!--HEADER ENDS-->
+
+    <div id="playPrompt">Click anywhere to start the music 🎵</div>
+  
+  <audio id="bg-music" loop>
+    <source src="zawarudo.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    document.addEventListener('click', () => {
+      const audio = document.getElementById('bg-music');
+      audio.play();
+      document.getElementById('playPrompt').style.display = 'none';
+    });
+  </script>
+
+    <section> <!--ABOUT ME SECTION STARTS-->
+        <h2> About Me</h2>
+        <div class="image-window">
+            <div class="scroll-container">
+                <img src="walter2.jpg" />
+              </div>
+            <div class="overlay-text-bb">
+              <p>Who are you talking to right now? Who is it you think you see? Do you know how much I make a year? I mean, even if I told you, you wouldn't believe it. Do you know what would happen if I suddenly decided to stop going into work? A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM THE DANGER! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!.</p>
+            </div>
+        </div>
+        
+        <p> </p> <!--ABOUT ME SECTION ENDS-->
+    </section>
+
+    <div id = "contact-form"> <!--CONTACT FORM-->
+        
+        <img src = "kakegurui.png"> <!-- add kakegurui image -->
+        <h2> Impressed with my work? Let's get in touch!</h2>
+        <form method="post" action = "someserver">
+            <input type = "text" name="First Name" placeholder="Walter">
+            <input type = "text" name = "Last Name" placeholder="White">
+            <input type = "text" name = "Email" placeholder="zawarudo@diobrando.com">
+            <textarea placeholder="What's on your mind?"></textarea>
+            <button type = "submit"> Send</button>
+            
+        </form>
+
+    </div> <!--END OF CONTACT-->
+
+    <!--SHOW OFF MY AUTISM USING IMAGES-->
+    <h2>Here are some memes</h2>
+    <table cellspacing = 0 cellpadding = 0>
+        <tr>
+            <td rowspan = "2"><img src = "jotaro.webp" class = "jotaro"></td>
+            <td><img src = "https://i.pinimg.com/736x/13/a6/a9/13a6a9dd475bf51afedd3eb2b8f2a287.jpg" ></td>
+            <td><img src = "eren.webp" ></td>
+        </tr>
+
+
+        <tr>
+            <td><img src = "walterwhite.webp"  ></td>
+            <td><img src = "jojo-paper-gun.gif" ></td>
+        </tr>
+    
+    </table> <!--END OF AUTISM-->
+
+    <hr style="border-top: 1px solid #fafafa;" />
+    <div id = newsletter>
+        <table>
+            <tr>
+                <td colspan = "2">
+                    <h2> Let's stay connected!</h2>
+                </td>
+            </tr>
+
+            <tr> 
+                <td>
+                <input type = "text" name = "" placeholder="Email">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button> Submit </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        Let the record state, I, the author of these webpages, is not liable to any cringe experienced by the user. Thank you.
+    </footer>
+    
+</body>
+</html>
