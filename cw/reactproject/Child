@@ -1,0 +1,14 @@
+import React from 'react';
+
+export default function Child(props){
+    return (
+    <>
+    <button onClick = {props.onIncrement}>Increment</button>
+    <button onClick = {props.onDecrement}>Decrement</button>
+    <p>Count = {props.count1}</p>
+
+    </>
+    
+)
+}
+
