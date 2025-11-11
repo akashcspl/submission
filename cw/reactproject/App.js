@@ -25,7 +25,7 @@ function App() {
 
   const [showPopup, setShowPopup] = useState(false);
   var [count1, setCount1] = useState(100);
-  const [count2, setCount2] = useState(0);
+  var [count2, setCount2] = useState(100);
 
   return (
     <div className="App">
@@ -96,6 +96,11 @@ function App() {
     onIncrement = { () => setCount1(count1 + 1)}
     onDecrement = { () => setCount1(count1 - 1)}
     />
+    
+    
+
+
+    
     
 
  
