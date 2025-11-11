@@ -4,13 +4,25 @@ import './index.css';
 import App from './App';
 import Form from './Form';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store } from './Store';
+import LoginApp from './LoginApp';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <>
   <React.StrictMode>
     <App />
     <Form />
   </React.StrictMode>
+
+  <Provider store={store}>
+    <LoginApp />    
+  </Provider>
+  </>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
