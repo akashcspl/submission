@@ -7,6 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './Store';
 import LoginApp from './LoginApp';
+import RouterApp from './RouterApp';
+import Fetch from './MyFetchData';
+import NavApp from './RouterApp';
 
 
 
@@ -16,10 +19,13 @@ root.render(
   <React.StrictMode>
     <App />
     <Form />
+    {/* <RouterApp /> */} 
+    <Fetch />
   </React.StrictMode>
 
   <Provider store={store}>
-    <LoginApp />    
+    {/* <LoginApp /> */}  
+    <NavApp />  
   </Provider>
   </>
   
